@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65247A44234DE4AD003FFCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247A43234DE4AD003FFCBF /* AppDelegate.swift */; };
+		65247A46234DE4AD003FFCBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247A45234DE4AD003FFCBF /* SceneDelegate.swift */; };
+		65247A48234DE4AD003FFCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247A47234DE4AD003FFCBF /* ViewController.swift */; };
+		65247A4B234DE4AD003FFCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65247A49234DE4AD003FFCBF /* Main.storyboard */; };
+		65247A4D234DE4B4003FFCBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65247A4C234DE4B4003FFCBF /* Assets.xcassets */; };
+		65247A50234DE4B5003FFCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65247A4E234DE4B5003FFCBF /* LaunchScreen.storyboard */; };
+		65247A5B234DE4B6003FFCBF /* IUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247A5A234DE4B6003FFCBF /* IUDTests.swift */; };
+		65247A66234DE4B6003FFCBF /* IUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247A65234DE4B6003FFCBF /* IUDUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65247A57234DE4B6003FFCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65247A38234DE4AC003FFCBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65247A3F234DE4AC003FFCBF;
+			remoteInfo = IUD;
+		};
+		65247A62234DE4B6003FFCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65247A38234DE4AC003FFCBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65247A3F234DE4AC003FFCBF;
+			remoteInfo = IUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65247A40234DE4AC003FFCBF /* IUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65247A43234DE4AD003FFCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65247A45234DE4AD003FFCBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65247A47234DE4AD003FFCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65247A4A234DE4AD003FFCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65247A4C234DE4B4003FFCBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65247A4F234DE4B5003FFCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65247A51234DE4B5003FFCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65247A56234DE4B6003FFCBF /* IUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65247A5A234DE4B6003FFCBF /* IUDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUDTests.swift; sourceTree = "<group>"; };
+		65247A5C234DE4B6003FFCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65247A61234DE4B6003FFCBF /* IUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65247A65234DE4B6003FFCBF /* IUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUDUITests.swift; sourceTree = "<group>"; };
+		65247A67234DE4B6003FFCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65247A3D234DE4AC003FFCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65247A53234DE4B6003FFCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65247A5E234DE4B6003FFCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65247A37234DE4AC003FFCBF = {
+			isa = PBXGroup;
+			children = (
+				65247A42234DE4AC003FFCBF /* IUD */,
+				65247A59234DE4B6003FFCBF /* IUDTests */,
+				65247A64234DE4B6003FFCBF /* IUDUITests */,
+				65247A41234DE4AC003FFCBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65247A41234DE4AC003FFCBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65247A40234DE4AC003FFCBF /* IUD.app */,
+				65247A56234DE4B6003FFCBF /* IUDTests.xctest */,
+				65247A61234DE4B6003FFCBF /* IUDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65247A42234DE4AC003FFCBF /* IUD */ = {
+			isa = PBXGroup;
+			children = (
+				65247A43234DE4AD003FFCBF /* AppDelegate.swift */,
+				65247A45234DE4AD003FFCBF /* SceneDelegate.swift */,
+				65247A47234DE4AD003FFCBF /* ViewController.swift */,
+				65247A49234DE4AD003FFCBF /* Main.storyboard */,
+				65247A4C234DE4B4003FFCBF /* Assets.xcassets */,
+				65247A4E234DE4B5003FFCBF /* LaunchScreen.storyboard */,
+				65247A51234DE4B5003FFCBF /* Info.plist */,
+			);
+			path = IUD;
+			sourceTree = "<group>";
+		};
+		65247A59234DE4B6003FFCBF /* IUDTests */ = {
+			isa = PBXGroup;
+			children = (
+				65247A5A234DE4B6003FFCBF /* IUDTests.swift */,
+				65247A5C234DE4B6003FFCBF /* Info.plist */,
+			);
+			path = IUDTests;
+			sourceTree = "<group>";
+		};
+		65247A64234DE4B6003FFCBF /* IUDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65247A65234DE4B6003FFCBF /* IUDUITests.swift */,
+				65247A67234DE4B6003FFCBF /* Info.plist */,
+			);
+			path = IUDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65247A3F234DE4AC003FFCBF /* IUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65247A6A234DE4B6003FFCBF /* Build configuration list for PBXNativeTarget "IUD" */;
+			buildPhases = (
+				65247A3C234DE4AC003FFCBF /* Sources */,
+				65247A3D234DE4AC003FFCBF /* Frameworks */,
+				65247A3E234DE4AC003FFCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IUD;
+			productName = IUD;
+			productReference = 65247A40234DE4AC003FFCBF /* IUD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65247A55234DE4B6003FFCBF /* IUDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65247A6D234DE4B6003FFCBF /* Build configuration list for PBXNativeTarget "IUDTests" */;
+			buildPhases = (
+				65247A52234DE4B6003FFCBF /* Sources */,
+				65247A53234DE4B6003FFCBF /* Frameworks */,
+				65247A54234DE4B6003FFCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65247A58234DE4B6003FFCBF /* PBXTargetDependency */,
+			);
+			name = IUDTests;
+			productName = IUDTests;
+			productReference = 65247A56234DE4B6003FFCBF /* IUDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65247A60234DE4B6003FFCBF /* IUDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65247A70234DE4B6003FFCBF /* Build configuration list for PBXNativeTarget "IUDUITests" */;
+			buildPhases = (
+				65247A5D234DE4B6003FFCBF /* Sources */,
+				65247A5E234DE4B6003FFCBF /* Frameworks */,
+				65247A5F234DE4B6003FFCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65247A63234DE4B6003FFCBF /* PBXTargetDependency */,
+			);
+			name = IUDUITests;
+			productName = IUDUITests;
+			productReference = 65247A61234DE4B6003FFCBF /* IUDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65247A38234DE4AC003FFCBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Carlos Monfort";
+				TargetAttributes = {
+					65247A3F234DE4AC003FFCBF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					65247A55234DE4B6003FFCBF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 65247A3F234DE4AC003FFCBF;
+					};
+					65247A60234DE4B6003FFCBF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 65247A3F234DE4AC003FFCBF;
+					};
+				};
+			};
+			buildConfigurationList = 65247A3B234DE4AC003FFCBF /* Build configuration list for PBXProject "IUD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65247A37234DE4AC003FFCBF;
+			productRefGroup = 65247A41234DE4AC003FFCBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65247A3F234DE4AC003FFCBF /* IUD */,
+				65247A55234DE4B6003FFCBF /* IUDTests */,
+				65247A60234DE4B6003FFCBF /* IUDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65247A3E234DE4AC003FFCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65247A50234DE4B5003FFCBF /* LaunchScreen.storyboard in Resources */,
+				65247A4D234DE4B4003FFCBF /* Assets.xcassets in Resources */,
+				65247A4B234DE4AD003FFCBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65247A54234DE4B6003FFCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65247A5F234DE4B6003FFCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65247A3C234DE4AC003FFCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65247A48234DE4AD003FFCBF /* ViewController.swift in Sources */,
+				65247A44234DE4AD003FFCBF /* AppDelegate.swift in Sources */,
+				65247A46234DE4AD003FFCBF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65247A52234DE4B6003FFCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65247A5B234DE4B6003FFCBF /* IUDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65247A5D234DE4B6003FFCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65247A66234DE4B6003FFCBF /* IUDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65247A58234DE4B6003FFCBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65247A3F234DE4AC003FFCBF /* IUD */;
+			targetProxy = 65247A57234DE4B6003FFCBF /* PBXContainerItemProxy */;
+		};
+		65247A63234DE4B6003FFCBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65247A3F234DE4AC003FFCBF /* IUD */;
+			targetProxy = 65247A62234DE4B6003FFCBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65247A49234DE4AD003FFCBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65247A4A234DE4AD003FFCBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65247A4E234DE4B5003FFCBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65247A4F234DE4B5003FFCBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65247A68234DE4B6003FFCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65247A69234DE4B6003FFCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65247A6B234DE4B6003FFCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BC2PWL3D8;
+				INFOPLIST_FILE = IUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosmonfort.IUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65247A6C234DE4B6003FFCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BC2PWL3D8;
+				INFOPLIST_FILE = IUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosmonfort.IUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65247A6E234DE4B6003FFCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BC2PWL3D8;
+				INFOPLIST_FILE = IUDTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosmonfort.IUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IUD.app/IUD";
+			};
+			name = Debug;
+		};
+		65247A6F234DE4B6003FFCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BC2PWL3D8;
+				INFOPLIST_FILE = IUDTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosmonfort.IUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IUD.app/IUD";
+			};
+			name = Release;
+		};
+		65247A71234DE4B6003FFCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BC2PWL3D8;
+				INFOPLIST_FILE = IUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosmonfort.IUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IUD;
+			};
+			name = Debug;
+		};
+		65247A72234DE4B6003FFCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BC2PWL3D8;
+				INFOPLIST_FILE = IUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosmonfort.IUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IUD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65247A3B234DE4AC003FFCBF /* Build configuration list for PBXProject "IUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65247A68234DE4B6003FFCBF /* Debug */,
+				65247A69234DE4B6003FFCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65247A6A234DE4B6003FFCBF /* Build configuration list for PBXNativeTarget "IUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65247A6B234DE4B6003FFCBF /* Debug */,
+				65247A6C234DE4B6003FFCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65247A6D234DE4B6003FFCBF /* Build configuration list for PBXNativeTarget "IUDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65247A6E234DE4B6003FFCBF /* Debug */,
+				65247A6F234DE4B6003FFCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65247A70234DE4B6003FFCBF /* Build configuration list for PBXNativeTarget "IUDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65247A71234DE4B6003FFCBF /* Debug */,
+				65247A72234DE4B6003FFCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65247A38234DE4AC003FFCBF /* Project object */;
+}
