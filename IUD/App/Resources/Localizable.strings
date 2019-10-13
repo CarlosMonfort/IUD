@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  IUD
+
+  Created by Carlos Monfort on 09/10/2019.
+  Copyright © 2019 Carlos Monfort. All rights reserved.
+*/
+
+// MARK: - Alerts
+"ALERT_WARNING" = "Aviso";
+"ALERT_OK" = "Aceptar";
+"ALERT_ERROR" = "ERROR";
+"ALERT_EDIT_TEXT" = "Introduce el nombre del usuario";
+
+// MARK: - Error
+"ERROR_UNEXPECTED" = "Ha ocurrido un error inesperado";
+"ERROR_TIMEOUT" = "El tiempo de respuesta ha expirado";
+"ERROR_INVALID_URL" = "La URL es inválida";
+"ERROR_REQUEST_FAILED" = "Ha fallado la request";
+"ERROR_DECODING_FAILURE" = "Ha ocurrido un error en la decodificación de la respuesta";
+"ERROR_NODATA" = "No existen datos";
+"ERROR_SESSION_FAIL" = "Ha ocurrido un error en la sesión";
+
+// MARK: - Splash View
+"SPLASH_TITLE" = "Users";
+
+// MARK: - Main View
+"MAIN_TITLE" = "Inicio";
+
+// MARK: - Detail View
+"DETAIL_TITLE" = "Detalle";
+"DETAIL_PROCESS_FINISHED" = "El proceso ha finalizado correctamente";
