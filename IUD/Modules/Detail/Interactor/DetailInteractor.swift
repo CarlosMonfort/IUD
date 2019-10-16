@@ -57,7 +57,7 @@ class DetailInteractor {
         let newBirthday: Date! = date ?? user.birthdate
         let newTime: Date! = time ?? user.birthdate
         guard let newDate = combineDateAndTime(date: newBirthday, time: newTime) else { return }
-        let newUser = UserJSON(name: newName, birthdate: newDate.toFormattedString(dateFormat: .iso861), id: user.id)
+        let newUser = UserJSON(name: newName, birthdate: newDate, id: user.id)
         updateUserData(newUser, .put)
     }
     
@@ -67,7 +67,7 @@ class DetailInteractor {
         let newBirthday: Date! = date
         let newTime: Date! = time
         guard let newDate = combineDateAndTime(date: newBirthday, time: newTime) else { return }
-        let newUser = UserJSON(name: newName, birthdate: newDate.toFormattedString(dateFormat: .iso861), id: nil)
+        let newUser = UserJSON(name: newName, birthdate: newDate, id: nil)
         updateUserData(newUser, .post)
     }
     

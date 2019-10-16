@@ -11,6 +11,6 @@ import Foundation
 struct UserJSON: Codable {
     
     var name: String?
-    var birthdate: String?
+    var birthdate: Date?
     var id: Int?
 }
