@@ -10,7 +10,7 @@ import UIKit
 
 protocol DetailViewProtocol: class {
     // Presenter -> View
-    func detailViewUpdateItems(items: [DetailItem])
+    func detailViewUpdateItems()
     func detailViewPresentAlert(_ title: String, _ description: String)
     func detailViewError(error: APIError)
 }
@@ -50,5 +50,7 @@ protocol DetailOutputInteractorProtocol: class {
 
 protocol DetailWireframeProtocol: class {
     // Presenter -> Wireframe
-    static func dCreateDetailModule(from view: DetailViewController, with user: User?)
+    var viewController: UIViewController? { get set }
+    
+    static func dCreateDetailModule(with user: User?) -> UIViewController
 }

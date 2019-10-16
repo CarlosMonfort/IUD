@@ -11,12 +11,11 @@ import UIKit
 class MainWireframe: MainWireframeProtocol {
     
     // MARK: - Variables
-    static var storyboard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
-    }
+    weak var viewController: UIViewController?
     
     // MARK: - Module Creation
     static func mCreateMainModule() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainVC") as? MainViewController else { return UIViewController() }
         
         let presenter: MainPresenterProtocol & MainOutputInteractorProtocol = MainPresenter()
@@ -28,14 +27,14 @@ class MainWireframe: MainWireframeProtocol {
         presenter.interactor = interactor
         presenter.wireframe = wireframe
         interactor.presenter = presenter
+        wireframe.viewController = mainViewController
         
         return mainViewController
     }
     
     // MARK: - Navigation
-    func mainWirePresentDetail(from view: UIViewController, with user: User?) {
-        guard let detailViewController = view.storyboard?.instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController else { return }
-        DetailWireframe.dCreateDetailModule(from: detailViewController, with: user)
-        view.navigationController?.pushViewController(detailViewController, animated: true)
+    func mainWirePresentDetail(with user: User?) {
+        let detailViewController = DetailWireframe.dCreateDetailModule(with: user)
+        viewController?.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

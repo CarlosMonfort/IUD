@@ -11,12 +11,11 @@ import UIKit
 class SplashWireframe: SplashWireframeProtocol {
     
     // MARK: - Variables
-    static var storyboard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
-    }
+    weak var viewController: UIViewController?
     
     // MARK: - Module Creation
     static func sCreateSplashModule() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let splashViewController = storyboard.instantiateViewController(withIdentifier: "SplashVC") as? SplashViewController else { return UIViewController() }
         
         let presenter: SplashPresenterProtocol & SplashOutputInteractorProtocol = SplashPresenter()
@@ -28,14 +27,15 @@ class SplashWireframe: SplashWireframeProtocol {
         presenter.interactor = interactor
         presenter.wireframe = wireframe
         interactor.presenter = presenter
+        wireframe.viewController = splashViewController
         
         return splashViewController
     }
     
-    func splashWirePresentMain(from view: UIViewController) {
+    func splashWirePresentMain() {
         let mainViewController = MainWireframe.mCreateMainModule()
         let navController = UINavigationController(rootViewController: mainViewController)
         navController.modalPresentationStyle = .overFullScreen
-        view.present(navController, animated: true, completion: nil)
+        viewController?.present(navController, animated: true, completion: nil)
     }
 }

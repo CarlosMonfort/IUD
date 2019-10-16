@@ -13,22 +13,20 @@ class SplashPresenter {
     var view: SplashViewProtocol?
     var interactor: SplashInputInteractorProtocol?
     var wireframe: SplashWireframeProtocol?
-    var splashVC: SplashViewController!
     
-    func viewDidLoad() {
-        splashVC.activityIndicator.startAnimating()
-        splashVC.lbTitle.text = NSLocalizedString("SPLASH_TITLE", comment: "")
-        splashVC.lbTitle.font = UIFont.preferredFont(forTextStyle: .title1)
-        splashVC.lbTitle.numberOfLines = 0
-        splashVC.lbTitle.lineBreakMode = .byWordWrapping
+    func viewDidLoad(from view: SplashViewController) {
+        view.activityIndicator.startAnimating()
+        view.lbTitle.text = NSLocalizedString("SPLASH_TITLE", comment: "")
+        view.lbTitle.font = UIFont.preferredFont(forTextStyle: .title1)
+        view.lbTitle.numberOfLines = 0
+        view.lbTitle.lineBreakMode = .byWordWrapping
     }
 }
 
 extension SplashPresenter: SplashPresenterProtocol {
     
     func splashPresenterViewDidLoad(from view: SplashViewController) {
-        splashVC = view
-        viewDidLoad()
+        viewDidLoad(from: view)
     }
     
     func splashPresenterViewDidAppear() {
@@ -38,7 +36,7 @@ extension SplashPresenter: SplashPresenterProtocol {
     }
     
     func splashPresenterPresentMain() {
-        wireframe?.splashWirePresentMain(from: splashVC)
+        wireframe?.splashWirePresentMain()
     }
 }
 

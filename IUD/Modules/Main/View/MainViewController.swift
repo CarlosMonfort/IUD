@@ -16,11 +16,6 @@ class MainViewController: UIViewController {
     
     // MARK: - Variables
     var presenter: MainPresenterProtocol?
-    var usersList: [User] = [] {
-        didSet {
-            tableView.reloadData()
-        }
-    }
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -35,5 +30,16 @@ class MainViewController: UIViewController {
 
     @IBAction func barBtNewUserPressed(_ sender: Any) {
         presenter?.mainPresenterPresentDetail(from: nil)
+    }
+}
+
+extension MainViewController: MainViewProtocol {
+    
+    func mainViewUpdateUsers() {
+        tableView.reloadData()
+    }
+    
+    func mainViewError(error: APIError) {
+        presentAlert(title: NSLocalizedString("ALERT_ERROR", comment: ""), message: error.localizedDescription)
     }
 }

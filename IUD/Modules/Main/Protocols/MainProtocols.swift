@@ -10,7 +10,7 @@ import UIKit
 
 protocol MainViewProtocol: class {
     // Presenter -> View
-    func mainViewUpdateUsers(with users: [User])
+    func mainViewUpdateUsers()
     func mainViewError(error: APIError)
 }
 
@@ -41,6 +41,8 @@ protocol MainOutputInteractorProtocol: class {
 
 protocol MainWireframeProtocol: class {
     // Presenter -> Wireframe
+    var viewController: UIViewController? { get set }
+    
     static func mCreateMainModule() -> UIViewController
-    func mainWirePresentDetail(from view: UIViewController, with user: User?)
+    func mainWirePresentDetail(with user: User?)
 }

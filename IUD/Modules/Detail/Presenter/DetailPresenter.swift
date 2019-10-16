@@ -8,21 +8,25 @@
 
 import UIKit
 
-class DetailPresenter {
+class DetailPresenter: NSObject {
     
     // MARK: - Variables
     var view: DetailViewProtocol?
     var interactor: DetailInputInteractorProtocol?
     var wireframe: DetailWireframeProtocol?
     var user: User?
-    var detailVC: DetailViewController!
     var userNameEdit: String?
     var userDateEdit: Date?
     var userTimeEdit: Date?
+    var detailItems: [DetailItem] = [] {
+        didSet {
+            view?.detailViewUpdateItems()
+        }
+    }
     
-    func viewDidLoad() {
-        detailVC.navigationItem.title = NSLocalizedString("DETAIL_TITLE", comment: "")
-        setUpTableView()
+    func viewDidLoad(from view: DetailViewController) {
+        view.navigationItem.title = NSLocalizedString("DETAIL_TITLE", comment: "")
+        setUpTableView(from: view)
         if let user = user {
             interactor?.detailInputGetUser(id: user.id)
         } else {
@@ -31,15 +35,15 @@ class DetailPresenter {
         
     }
     
-    func setUpTableView() {
-        detailVC.tableView.delegate = detailVC
-        detailVC.tableView.dataSource = detailVC
-        detailVC.tableView.rowHeight = UITableView.automaticDimension
-        detailVC.tableView.estimatedRowHeight = 70
-        detailVC.tableView.tableFooterView = UIView()
-        detailVC.tableView.register(DetailNameTableViewCell.nib, forCellReuseIdentifier: DetailNameTableViewCell.identifier)
-        detailVC.tableView.register(DetailHourTableViewCell.nib, forCellReuseIdentifier: DetailHourTableViewCell.identifier)
-        detailVC.tableView.register(DetailBirthdayTableViewCell.nib, forCellReuseIdentifier: DetailBirthdayTableViewCell.identifier)
+    func setUpTableView(from view: DetailViewController) {
+        view.tableView.delegate = self
+        view.tableView.dataSource = self
+        view.tableView.rowHeight = UITableView.automaticDimension
+        view.tableView.estimatedRowHeight = 70
+        view.tableView.tableFooterView = UIView()
+        view.tableView.register(DetailNameTableViewCell.nib, forCellReuseIdentifier: DetailNameTableViewCell.identifier)
+        view.tableView.register(DetailHourTableViewCell.nib, forCellReuseIdentifier: DetailHourTableViewCell.identifier)
+        view.tableView.register(DetailBirthdayTableViewCell.nib, forCellReuseIdentifier: DetailBirthdayTableViewCell.identifier)
     }
     
     func saveData() {
@@ -50,8 +54,7 @@ class DetailPresenter {
 extension DetailPresenter: DetailPresenterProtocol {
     
     func detailPresenterViewDidLoad(from view: DetailViewController) {
-        detailVC = view
-        viewDidLoad()
+        viewDidLoad(from: view)
     }
     
     func detailPresenterBarBtDeletePressed() {
@@ -61,7 +64,7 @@ extension DetailPresenter: DetailPresenterProtocol {
     
     func detailPresenterBarBtUndoPressed() {
         guard let user = user else { return }
-        detailUserDataFetched(user: user, items: detailVC.detailItems)
+        detailUserDataFetched(user: user, items: detailItems)
     }
     
     func detailPresenterBarBtSavePressed() {
@@ -86,7 +89,7 @@ extension DetailPresenter: DetailOutputInteractorProtocol {
     func detailUserDataFetched(user: User?, items: [DetailItem]) {
         DispatchQueue.main.async {
             self.user = user
-            self.view?.detailViewUpdateItems(items: items)
+            self.detailItems = items
         }
     }
     
@@ -95,7 +98,7 @@ extension DetailPresenter: DetailOutputInteractorProtocol {
             if let error = error {
                 self.view?.detailViewError(error: error)
             } else {
-                self.view?.detailViewUpdateItems(items: [])
+                self.detailItems = []
                 self.view?.detailViewPresentAlert(NSLocalizedString("ALERT_WARNING", comment: ""), NSLocalizedString("DETAIL_PROCESS_FINISHED", comment: ""))
             }
         }

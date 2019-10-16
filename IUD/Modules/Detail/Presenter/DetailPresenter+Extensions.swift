@@ -1,29 +1,14 @@
 //
-//  DetailViewController+Extensions.swift
+//  DetailPresenter+Extensions.swift
 //  IUD
 //
-//  Created by Carlos Monfort on 11/10/2019.
+//  Created by Carlos Monfort Gómez on 16/10/2019.
 //  Copyright © 2019 Carlos Monfort. All rights reserved.
 //
 
 import UIKit
 
-extension DetailViewController: DetailViewProtocol {
-    
-    func detailViewUpdateItems(items: [DetailItem]) {
-        detailItems = items
-    }
-    
-    func detailViewPresentAlert(_ title: String, _ description: String) {
-        presentAlertAndGoBack(title: NSLocalizedString("ALERT_WARNING", comment: ""), message: description)
-    }
-    
-    func detailViewError(error: APIError) {
-        presentAlert(title: NSLocalizedString("ALERT_ERROR", comment: ""), message: error.localizedDescription)
-    }
-}
-
-extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension DetailPresenter: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return detailItems.count
@@ -62,23 +47,23 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension DetailViewController: DetailNameCellProtocol {
+extension DetailPresenter: DetailNameCellProtocol {
     
     func detailNameCellUserNameChange(_ text: String) {
-        presenter?.detailPresenterUserNameChanges(text)
+        detailPresenterUserNameChanges(text)
     }
 }
 
-extension DetailViewController: DetailBirthdayCellProtocol {
+extension DetailPresenter: DetailBirthdayCellProtocol {
     
     func detailBirthdayCellDateChange(_ date: Date) {
-        presenter?.detailPresenterUserDateChanges(date)
+        detailPresenterUserDateChanges(date)
     }
 }
 
-extension DetailViewController: DetailHourCellProtocol {
+extension DetailPresenter: DetailHourCellProtocol {
     
     func detailHourCellTimeChange(_ time: Date) {
-        presenter?.detailPresenterUserTimeChanges(time)
+        detailPresenterUserTimeChanges(time)
     }
 }

@@ -36,6 +36,8 @@ protocol SplashOutputInteractorProtocol: class {
 
 protocol SplashWireframeProtocol: class {
     // Presenter -> Wireframe
+    var viewController: UIViewController? { get set }
+    
     static func sCreateSplashModule() -> UIViewController
-    func splashWirePresentMain(from view: UIViewController)
+    func splashWirePresentMain()
 }

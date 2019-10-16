@@ -18,11 +18,6 @@ class DetailViewController: UIViewController {
     
     // MARK: - Variables
     var presenter: DetailPresenterProtocol?
-    var detailItems: [DetailItem] = [] {
-        didSet {
-            tableView.reloadData()
-        }
-    }
     var datePicker: UIDatePicker?
     
     // MARK: - Life Cicle
@@ -42,5 +37,20 @@ class DetailViewController: UIViewController {
     
     @IBAction func barBtSavePressed(_ sender: Any) {
         presenter?.detailPresenterBarBtSavePressed()
+    }
+}
+
+extension DetailViewController: DetailViewProtocol {
+    
+    func detailViewUpdateItems() {
+        tableView.reloadData()
+    }
+    
+    func detailViewPresentAlert(_ title: String, _ description: String) {
+        presentAlertAndGoBack(title: NSLocalizedString("ALERT_WARNING", comment: ""), message: description)
+    }
+    
+    func detailViewError(error: APIError) {
+        presentAlert(title: NSLocalizedString("ALERT_ERROR", comment: ""), message: error.localizedDescription)
     }
 }

@@ -12,7 +12,6 @@
 		65053393234F582800C09446 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65053392234F582800C09446 /* JSONDecoder+Extension.swift */; };
 		650792B423506C0D0061651F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650792B323506C0D0061651F /* DetailViewController.swift */; };
 		650792B723506CA30061651F /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650792B623506CA30061651F /* DetailInteractor.swift */; };
-		650792B923507BF20061651F /* DetailViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650792B823507BF20061651F /* DetailViewController+Extensions.swift */; };
 		650792BD23507D140061651F /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650792BC23507D140061651F /* DetailItem.swift */; };
 		650792C123508B800061651F /* GetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650792C023508B800061651F /* GetUser.swift */; };
 		650792C523509CA80061651F /* DetailNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650792C323509CA80061651F /* DetailNameTableViewCell.swift */; };
@@ -47,7 +46,6 @@
 		65247AA5234DF769003FFCBF /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247AA4234DF769003FFCBF /* APIResponse.swift */; };
 		65247AA7234DFDAA003FFCBF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247AA6234DFDAA003FFCBF /* APIClient.swift */; };
 		65247AAE234E033C003FFCBF /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247AAD234E033C003FFCBF /* APIRequestProtocol.swift */; };
-		65247AB0234E0490003FFCBF /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247AAF234E0490003FFCBF /* MainViewController+Extensions.swift */; };
 		65247AB3234E0B9D003FFCBF /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247AB2234E0B9D003FFCBF /* MainInteractor.swift */; };
 		65247AB7234E0E6D003FFCBF /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247AB5234E0E6D003FFCBF /* UserTableViewCell.swift */; };
 		65247AB8234E0E6D003FFCBF /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65247AB6234E0E6D003FFCBF /* UserTableViewCell.xib */; };
@@ -56,6 +54,8 @@
 		65247ABE234E24CC003FFCBF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247ABD234E24CC003FFCBF /* UIViewController+Extension.swift */; };
 		65247AC0234E25D7003FFCBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65247ABF234E25D7003FFCBF /* Localizable.strings */; };
 		900A80192357985500B13110 /* UserJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900A80182357985500B13110 /* UserJSON.swift */; };
+		901FD4E02357BF4E0078FCDA /* MainPresenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FD4DF2357BF4E0078FCDA /* MainPresenter+Extensions.swift */; };
+		901FD4E22357C2800078FCDA /* DetailPresenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FD4E12357C2800078FCDA /* DetailPresenter+Extensions.swift */; };
 		9026D17E234FB42000063285 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026D17D234FB42000063285 /* SplashInteractor.swift */; };
 		9026D180234FB43100063285 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026D17F234FB43100063285 /* SplashPresenter.swift */; };
 		9026D182234FB43C00063285 /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026D181234FB43C00063285 /* SplashWireframe.swift */; };
@@ -85,7 +85,6 @@
 		65053392234F582800C09446 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		650792B323506C0D0061651F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		650792B623506CA30061651F /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
-		650792B823507BF20061651F /* DetailViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Extensions.swift"; sourceTree = "<group>"; };
 		650792BC23507D140061651F /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
 		650792C023508B800061651F /* GetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUser.swift; sourceTree = "<group>"; };
 		650792C323509CA80061651F /* DetailNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNameTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,7 +125,6 @@
 		65247AA4234DF769003FFCBF /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		65247AA6234DFDAA003FFCBF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		65247AAD234E033C003FFCBF /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
-		65247AAF234E0490003FFCBF /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
 		65247AB2234E0B9D003FFCBF /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		65247AB5234E0E6D003FFCBF /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		65247AB6234E0E6D003FFCBF /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
@@ -135,6 +133,8 @@
 		65247ABD234E24CC003FFCBF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		65247ABF234E25D7003FFCBF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		900A80182357985500B13110 /* UserJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJSON.swift; sourceTree = "<group>"; };
+		901FD4DF2357BF4E0078FCDA /* MainPresenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainPresenter+Extensions.swift"; sourceTree = "<group>"; };
+		901FD4E12357C2800078FCDA /* DetailPresenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailPresenter+Extensions.swift"; sourceTree = "<group>"; };
 		9026D17D234FB42000063285 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		9026D17F234FB43100063285 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		9026D181234FB43C00063285 /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
@@ -312,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				65247A7C234DE9EF003FFCBF /* MainPresenter.swift */,
+				901FD4DF2357BF4E0078FCDA /* MainPresenter+Extensions.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -321,7 +322,6 @@
 			children = (
 				65247AB4234E0E0C003FFCBF /* Cells */,
 				65247A7A234DE82B003FFCBF /* MainViewController.swift */,
-				65247AAF234E0490003FFCBF /* MainViewController+Extensions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				65247A8F234DEAE5003FFCBF /* DetailPresenter.swift */,
+				901FD4E12357C2800078FCDA /* DetailPresenter+Extensions.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -380,7 +381,6 @@
 			children = (
 				650792C223509C830061651F /* Cells */,
 				650792B323506C0D0061651F /* DetailViewController.swift */,
-				650792B823507BF20061651F /* DetailViewController+Extensions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -656,7 +656,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9026D186234FB45F00063285 /* SplashProtocols.swift in Sources */,
-				650792B923507BF20061651F /* DetailViewController+Extensions.swift in Sources */,
 				65247A84234DEA5A003FFCBF /* MainProtocols.swift in Sources */,
 				650792C523509CA80061651F /* DetailNameTableViewCell.swift in Sources */,
 				650792CD23509CD00061651F /* DetailHourTableViewCell.swift in Sources */,
@@ -676,6 +675,7 @@
 				650792B723506CA30061651F /* DetailInteractor.swift in Sources */,
 				9026D180234FB43100063285 /* SplashPresenter.swift in Sources */,
 				65247A9D234DF721003FFCBF /* APIMethod.swift in Sources */,
+				901FD4E02357BF4E0078FCDA /* MainPresenter+Extensions.swift in Sources */,
 				65247A90234DEAE5003FFCBF /* DetailPresenter.swift in Sources */,
 				65247A9F234DF735003FFCBF /* APIEndpoint.swift in Sources */,
 				65247ABE234E24CC003FFCBF /* UIViewController+Extension.swift in Sources */,
@@ -694,9 +694,9 @@
 				650792D42350C6600061651F /* BirthdayItem.swift in Sources */,
 				65247A46234DE4AD003FFCBF /* SceneDelegate.swift in Sources */,
 				65247AA3234DF759003FFCBF /* APIRequest.swift in Sources */,
-				65247AB0234E0490003FFCBF /* MainViewController+Extensions.swift in Sources */,
 				9026D182234FB43C00063285 /* SplashWireframe.swift in Sources */,
 				65247A7B234DE82B003FFCBF /* MainViewController.swift in Sources */,
+				901FD4E22357C2800078FCDA /* DetailPresenter+Extensions.swift in Sources */,
 				65247AA7234DFDAA003FFCBF /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
