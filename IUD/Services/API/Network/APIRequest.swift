@@ -27,6 +27,21 @@ class APIRequest {
         let header1 = APIHeader(field: "Content-Type", value: "application/json")
         let header2 = APIHeader(field: "Accept", value: "application/json")
         headers = [header1, header2]
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
         self.body = try JSONEncoder().encode(user)
+    }
+    
+    init(method: APIMethod, path: String, user: UserJSON) throws {
+        self.method = method
+        self.path = path
+        let header = APIHeader(field: "Content-Type", value: "application/json")
+        headers = [header]
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        self.body = try encoder.encode(user)
+        if let json = try? encoder.encode(user) {
+            print(String(data: json, encoding: .utf8)!)
+        }
     }
 }

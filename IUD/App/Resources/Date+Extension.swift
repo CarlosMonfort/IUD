@@ -12,6 +12,7 @@ enum DateFormat: String {
     
     case dayComplete = "dd-MM-yyyy"
     case time = "HH:mm"
+    case iso861 = "yyy-MM-dd'T'HH:mm:ss.SSS'Z'"
     
     func value() -> String {
         return self.rawValue

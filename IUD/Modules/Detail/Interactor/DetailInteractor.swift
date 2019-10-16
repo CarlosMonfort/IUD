@@ -29,7 +29,7 @@ class DetailInteractor {
         do {
             guard let data = response else { self.presenter?.detailOutputError(error: .noData); return }
             let decoder = JSONDecoder()
-            decoder.dateDecodingStrategyFormatters = [DateFormatter.iso8601Full, DateFormatter.iso8601Short]
+            decoder.dateDecodingStrategyFormatters = [DateFormatter.iso8601Full, DateFormatter.iso8601Short, DateFormatter.iso8601FullMiliseconds]
             let user = try decoder.decode(User.self, from: data)
             let items = self.userToDetailItems(user)
             self.presenter?.detailUserDataFetched(user: user, items: items)
@@ -57,24 +57,8 @@ class DetailInteractor {
         let newBirthday: Date! = date ?? user.birthdate
         let newTime: Date! = time ?? user.birthdate
         guard let newDate = combineDateAndTime(date: newBirthday, time: newTime) else { return }
-        let newUser = User(id: user.id, name: newName, birthdate: newDate)
-        putUserData(newUser)
-    }
-    
-    func putUserData(_ user: User) {
-        do {
-            let putRequest = try APIRequest(method: .put, path: "", user: user)
-            APIClient.shared.performRequest(putRequest) { (result) in
-                switch result {
-                case .success( _):
-                    self.presenter?.detailProcessFinished(error: nil)
-                case .failure(let responseError):
-                    self.presenter?.detailOutputError(error: responseError)
-                }
-            }
-        } catch {
-            self.presenter?.detailOutputError(error: .unexpectedError)
-        }
+        let newUser = UserJSON(name: newName, birthdate: newDate.toFormattedString(dateFormat: .iso861), id: user.id)
+        updateUserData(newUser, .put)
     }
     
     // MARK: - Post User
@@ -83,14 +67,14 @@ class DetailInteractor {
         let newBirthday: Date! = date
         let newTime: Date! = time
         guard let newDate = combineDateAndTime(date: newBirthday, time: newTime) else { return }
-        let newUser = User(id: 28900, name: newName, birthdate: newDate)
-        putUserData(newUser)
+        let newUser = UserJSON(name: newName, birthdate: newDate.toFormattedString(dateFormat: .iso861), id: nil)
+        updateUserData(newUser, .post)
     }
     
-    func postUserData(_ user: User) {
+    func updateUserData(_ user: UserJSON, _ method: APIMethod) {
         do {
-            let putRequest = try APIRequest(method: .post, path: "", user: user)
-            APIClient.shared.performRequest(putRequest) { (result) in
+            let postRequest = try APIRequest(method: method, path: "", user: user)
+            APIClient.shared.performRequest(postRequest) { (result) in
                 switch result {
                 case .success( _):
                     self.presenter?.detailProcessFinished(error: nil)

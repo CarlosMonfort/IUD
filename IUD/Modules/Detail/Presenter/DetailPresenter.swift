@@ -96,7 +96,7 @@ extension DetailPresenter: DetailOutputInteractorProtocol {
                 self.view?.detailViewError(error: error)
             } else {
                 self.view?.detailViewUpdateItems(items: [])
-                self.view?.detailViewPresentAlert(NSLocalizedString("ALERT_WARNING", comment: ""), NSLocalizedString("DETAIL_USER_DELETED", comment: ""))
+                self.view?.detailViewPresentAlert(NSLocalizedString("ALERT_WARNING", comment: ""), NSLocalizedString("DETAIL_PROCESS_FINISHED", comment: ""))
             }
         }
     }

@@ -55,6 +55,7 @@
 		65247ABC234E2058003FFCBF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247ABB234E2058003FFCBF /* Date+Extension.swift */; };
 		65247ABE234E24CC003FFCBF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65247ABD234E24CC003FFCBF /* UIViewController+Extension.swift */; };
 		65247AC0234E25D7003FFCBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65247ABF234E25D7003FFCBF /* Localizable.strings */; };
+		900A80192357985500B13110 /* UserJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900A80182357985500B13110 /* UserJSON.swift */; };
 		9026D17E234FB42000063285 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026D17D234FB42000063285 /* SplashInteractor.swift */; };
 		9026D180234FB43100063285 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026D17F234FB43100063285 /* SplashPresenter.swift */; };
 		9026D182234FB43C00063285 /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026D181234FB43C00063285 /* SplashWireframe.swift */; };
@@ -133,6 +134,7 @@
 		65247ABB234E2058003FFCBF /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		65247ABD234E24CC003FFCBF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		65247ABF234E25D7003FFCBF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		900A80182357985500B13110 /* UserJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJSON.swift; sourceTree = "<group>"; };
 		9026D17D234FB42000063285 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		9026D17F234FB43100063285 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		9026D181234FB43C00063285 /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				650792CF2350C6260061651F /* NameItem.swift */,
 				650792D32350C6600061651F /* BirthdayItem.swift */,
 				650792D52350C66B0061651F /* HourItem.swift */,
+				900A80182357985500B13110 /* UserJSON.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				65247ABE234E24CC003FFCBF /* UIViewController+Extension.swift in Sources */,
 				65053393234F582800C09446 /* JSONDecoder+Extension.swift in Sources */,
 				65247AAE234E033C003FFCBF /* APIRequestProtocol.swift in Sources */,
+				900A80192357985500B13110 /* UserJSON.swift in Sources */,
 				650792D02350C6260061651F /* NameItem.swift in Sources */,
 				65247AA1234DF745003FFCBF /* APIError.swift in Sources */,
 				65247A81234DEA41003FFCBF /* MainWireframe.swift in Sources */,
